@@ -9,7 +9,8 @@ const client = StreamChat.getInstance(apiKey);
 
 function App() {
   return (
-    <div className="app_wrapper">
+    // BEM naming convention
+    <div className="app__wrapper">
       <Chat client={client} theme="team light">
         <ChannelListContainer />
         <ChannelContainer />
