@@ -20,8 +20,21 @@ const SideBar = () => (
   </div>
 );
 
+const CompanyHeader = () => (
+  <div className="channel-list__header">
+    <p className="channel-list__header">Medical Pager</p>
+  </div>
+);
+
 const ChannelListContainer = () => {
-  return <div>ChannelListContainer</div>;
+  return (
+    <>
+      <SideBar />
+      <div className="channel-list__list__wrapper">
+        <CompanyHeader />
+      </div>
+    </>
+  );
 };
 
 export default ChannelListContainer;
